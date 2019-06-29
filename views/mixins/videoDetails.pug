@@ -1,0 +1,15 @@
+mixin videoDetails( detail = {})
+    .video__Details
+        h4 VIDEO INFO
+        ul.video__Info
+            li.video__id VIDEO IDENTIFICATION NO. #{detail.id}
+            li.title TITLE : #{detail.title}
+            li.description DESCRIPTION : #{detail.description}
+            li.views VIEWS : #{detail.views}
+            li.videoFile FILE URL : #{detail.videoFile}
+        h4 CREATOR INFO
+        ul.video__creator
+            li.creator__id USER ID : #{detail.creator.id}
+            li.name NAME : #{detail.creator.name}
+            li.email EMAIL : #{detail.creator.email}
+            

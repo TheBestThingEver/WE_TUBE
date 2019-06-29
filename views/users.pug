@@ -1,4 +1,5 @@
 extends layouts/main.pug
 
 block content
-    p HOME
+    form(action=routes.users, method="post")
+        input(type="text", placehloder = "plz type in here")
